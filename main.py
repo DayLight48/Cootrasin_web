@@ -5,7 +5,7 @@ import os
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
+app.config['SECRET_KEY'] = "fjdsalfkjls"  # os.getenv("SECRET_KEY")
 Bootstrap(app)
 
 @app.route('/')
