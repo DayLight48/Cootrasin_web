@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="es">
+	<head>
+		<title>{% block title %}Página Principal - COOTRASIN{% endblock %}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/css/main.css"/>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+				    {% block main_content %}
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<h3 class="logo"><strong>Página principal</strong></h3>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>COOTRASIN</h1>
+											<p>Cooperativa de Trabajo y Servicios de Invidentes</p>
+										</header>
+										<p>En Cootrasin somos una entidad sin ánimo de lucro, de carácter privado y adscrita al sector de economía solidaria, conformada en su mayoría por personas en condición de discapacidad visual y baja visión. Llevamos 34 años al servicio de la población ciega y la comunidad.</p>
+										<ul class="actions">
+											<li><a href="{{ url_for('quienes_somos') }}" class="button big">Conoce más</a></li>
+										</ul>
+									</div>
+									<span class="image object">
+										<img src="https://www.inci.gov.co/sites/default/files/styles/imagen_interna/public/Art.-cotrasin.jpg?itok=Xq7YZcGg" alt="Logo de Cootrasin - Cooperativa de Trabajo y Servicios de Invidentes" />
+									</span>
+								</section>
+						</div>
+					</div>
+					{% endblock %}
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menú</h2>
+									</header>
+									<ul>
+										<li><a href="/">Página principal</a></li>
+										<li><a href="{{ url_for('quienes_somos') }}">¿Quiénes somos?</a></li>
+										<li><a href="{{ url_for('servicios') }}">Servicios</a></li>
+										<!-- <li><a href="#">Testimonios</a></li> -->
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contáctanos</h2>
+									</header>
+									<p>¿Desea ponerse en contacto?</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">correodeprueba@test.com</a></li>
+										<li class="icon solid fa-phone">+57 301 6692885</li>
+										<li class="icon solid fa-home">Dirección</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Cooperativa de Trabajo y Servicios de Invidentes. COOTRASIN - 2026 </p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
